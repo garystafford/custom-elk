@@ -38,10 +38,11 @@ sudo yum makecache fast
 
 sudo yum -y install docker-ce
 
-sudo systemctl start docker
-sudo systemctl enable docker
-docker --version
-
 # sudo groupadd docker
 sudo usermod -aG docker $USER
+
+sudo systemctl start docker
+sudo systemctl enable docker
+docker version
+
 # must exit to set
