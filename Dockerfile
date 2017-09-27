@@ -6,8 +6,9 @@ LABEL MAINTAINER "Gary A. Stafford <gary.stafford@accenture.com>"
 ENV REFRESHED_AT 2017-09-13
 
 # overwrite existing logstash config file
+ADD 03-logspout-input.conf /etc/logstash/conf.d/03-logspout-input.conf
+ADD 04-gelf-input.conf /etc/logstash/conf.d/04-gelf-input.conf
 ADD 30-output.conf /etc/logstash/conf.d/30-output.conf
-ADD 02-beats-input.conf /etc/logstash/conf.d/02-beats-input.conf
 
 # install elasticsearch plugins
 # install curator to remove old data in elasticsearch
