@@ -1,9 +1,9 @@
 # http://elk-docker.readthedocs.io/
 
-FROM sebp/elk:551
+FROM sebp/elk:561
 
 LABEL MAINTAINER "Gary A. Stafford <gary.stafford@accenture.com>"
-ENV REFRESHED_AT 2017-09-13
+ENV REFRESHED_AT 2017-09-26
 
 # overwrite existing logstash config file
 ADD 03-logspout-input.conf /etc/logstash/conf.d/03-logspout-input.conf
